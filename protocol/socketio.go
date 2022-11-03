@@ -167,7 +167,7 @@ func getMethod(text string) (method, restText string, err error) {
 		return "", "", ErrorWrongPacket
 	}
 
-	return text[start:end], text[rest : len(text)-1], nil
+	return text[start:end], text[rest : len(text)-2], nil
 }
 
 func Decode(data string) (*Message, error) {
